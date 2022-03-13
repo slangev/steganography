@@ -114,7 +114,7 @@ func encodeStream(bitStream []byte, img image.Image, cimg Changeable) {
 
 		count++
 
-		c := color.RGBA{uint8(255), uint8(0), uint8(0), uint8(a)}
+		c := color.RGBA{uint8(r), uint8(g), uint8(b), uint8(a)}
 		cimg.Set(x, y, c)
 		if count == 3 {
 			count = 0
