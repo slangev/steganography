@@ -31,7 +31,7 @@ func getImageFromFilePath(filePath string) (image.Image, error) {
 	return image, err
 }
 
-func convertTextToBitStream(covert string) []byte {
+func convertTextToBitStream(_ string) []byte {
 	bitStream := make([]byte, 0)
 	for _, char := range *wordPtr {
 		single := char & 0xFF
